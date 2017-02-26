@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.cell.*?> 
+<?import javafx.collections.*?> 
+<?import fxmltableview.*?> 
+<?import javafx.scene.image.*?>
+<?import javafx.scene.chart.*?>
+
+
+<LineChart fx:id="graph" xmlns:fx="http://javafx.com/fxml" title="Progress">
+	<xAxis>
+		<CategoryAxis fx:id="xAxis" label="Date"/>
+	</xAxis>
+	<yAxis>
+		<NumberAxis fx:id="yAxis" label="Weight" side="LEFT"/>
+	</yAxis>
+</LineChart>

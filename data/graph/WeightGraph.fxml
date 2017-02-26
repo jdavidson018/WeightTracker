@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.cell.*?> 
+<?import javafx.collections.*?> 
+<?import fxmltableview.*?> 
+
+<BorderPane fx:controller="graph.WeightGraphController"
+	xmlns:fx="http://javafx.com/fxml" styleClass="root">
+	<padding>
+		<Insets top="25" right="25" bottom="25" left="25" />
+	</padding>
+	<top>
+		<Text text="Top" />
+	</top>
+
+	<center>
+		<GridPane fx:id="graphPane">
+			<Text text="graphPane"/>
+		</GridPane>
+	</center>
+
+	<left>
+		<GridPane fx:id="tablePane">
+			<Text text="Left"/>
+		</GridPane>
+	</left>
+
+	<right>
+		<Text text="Right" />
+	</right>
+
+	<bottom>
+		<Text text="Bottom" />
+	</bottom>
+</BorderPane>

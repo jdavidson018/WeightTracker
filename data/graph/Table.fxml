@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.cell.*?> 
+<?import javafx.collections.*?> 
+<?import fxmltableview.*?> 
+<?import javafx.scene.image.*?>
+
+<TableView fx:id="table" xmlns:fx="http://javafx.com/fxml">
+	<columns>
+		<TableColumn text="Date">
+			<cellValueFactory>
+				<PropertyValueFactory property="date" />
+			</cellValueFactory>
+		</TableColumn>
+		<TableColumn text="Weight">
+			<cellValueFactory>
+				<PropertyValueFactory property="weight" />
+			</cellValueFactory>
+		</TableColumn>
+	</columns>
+</TableView>
