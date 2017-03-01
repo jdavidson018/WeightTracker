@@ -19,7 +19,8 @@ public class TableController implements Initializable{
 	private ArrayList<Weight> weights;
 	
 	public TableController(){
-		weights = readWeights.readWeightData();
+		readWeights rw = new readWeights();
+		weights = rw.getWeights();
 	}
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {

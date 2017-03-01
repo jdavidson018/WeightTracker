@@ -28,7 +28,8 @@ public class GraphController implements Initializable{
 	private ArrayList<Weight> weights;
 	
 	public GraphController(){
-		weights = readWeights.readWeightData();
+		readWeights rw = new readWeights();
+		weights = rw.getWeights();
 		data = new XYChart.Series<String, Number>();
 		data.setName("Your Weight");
 		for(Weight w : weights){
